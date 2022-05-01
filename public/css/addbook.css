@@ -1,0 +1,149 @@
+.ab_container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.ab_container h1 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.ab_container form p {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ab_container input {
+    font-size: 16px;
+    width: 454px;
+    height: 32px;
+    margin-left: 16px;
+    border: 2px solid hsl(144, 16%, 76%);
+    border-radius: 3px;
+}
+
+/* .photo input{
+    border: none;
+} */
+
+/* .ab_container.bk_price{
+    font-size: 16px;
+    width: 454px;
+    height: 32px;
+    padding-left: 20px;
+    border: 2px solid hsl(144, 16%, 76%);
+    border-radius: 3px;
+}
+.bk_author{
+    font-size: 16px;
+    width: 454px;
+    height: 32px;
+    padding-left: 20px;
+    border: 2px solid hsl(144, 16%, 76%);
+    border-radius: 3px;
+}
+
+.bk_price{
+    font-size: 16px;
+    width: 454px;
+    height: 32px;
+    padding-left: 20px;
+    border: 2px solid hsl(144, 16%, 76%);
+    border-radius: 3px;
+}
+
+.bk_category{
+    font-size: 16px;
+    width: 454px;
+    height: 32px;
+    padding-left: 20px;
+    border: 2px solid hsl(144, 16%, 76%);
+    border-radius: 3px;
+}
+
+.bk_course{
+    font-size: 16px;
+    width: 454px;
+    height: 32px;
+    padding-left: 20px;
+    border: 2px solid hsl(144, 16%, 76%);
+    border-radius: 3px;
+}*/
+
+.description textarea {
+    font-size: 16px;
+    width: 600px;
+    height: 200px;
+    padding-left: 10px;
+    border: 2px solid hsl(144, 16%, 76%);
+    border-radius: 3px;
+}
+
+.ab_container form button {
+    background-color: #5d9777;
+    border-radius: 5px;
+    color: white;
+    padding: 12px 30px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.sk_container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sk_container h2 {
+    padding: 5px;
+    padding-left: 14px;
+    font-weight: bold;
+    background-color: #d4e4d3;
+}
+
+.abook {
+    float: left;
+    position: relative;
+    /* margin:14px; */
+    /* border: 1px solid #5d9777; */
+}
+
+.abook_title {
+    font-size: 15px;
+    color: rgb(67, 71, 67);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 5px;
+
+}
+
+.abook_price {
+    font-size: 22px;
+    color: rgb(252, 184, 12);
+    font-weight: bold;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.clearfix img {
+    position: relative;
+    width: 260px;
+    height: 345px;
+    padding-top: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.logintounlock p {
+    font-size: 25px;
+}
+
+.logintounlock p a {
+    text-decoration: underline;
+}
+
+.logintounlock {
+    height: 500px
+}

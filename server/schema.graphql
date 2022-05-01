@@ -1,0 +1,119 @@
+scalar GraphQLDate
+
+enum StatusType {
+  Paid
+  Shipped
+  Delivered
+  Rated
+}
+
+type User {
+  _id: ID!
+  name: String!
+  email: String!
+  phone: String!
+  password: String!
+  purchase: Int!
+  sell: Int!
+}
+
+type Book {
+  _id: ID!
+  id: Int!
+  title: String!
+  author: String
+  price: Float!
+  description: String!
+  category: String
+  course: String
+  photo: String
+  ownerid: String!
+}
+
+type Order {
+  _id: ID!
+  id: Int!
+  booktitle: String!
+  buyerid: String 
+  sellerid: String
+  status: StatusType!
+  created: GraphQLDate!
+}
+
+type Review {
+  _id: ID!
+  id: Int!
+  orderid : Int!
+  buyerid: String
+  rate: Int!
+  comments: String! 
+  created: GraphQLDate!
+  photo: String
+}
+
+"Inputs"
+input UserInputs {
+  name: String!
+  email: String!
+  phone: String!
+  password: String!
+  purchase: Int!
+  sell: Int!
+}
+
+input UserCheckInputs {
+  email: String!
+  password: String!
+}
+
+input BookInputs {
+  title: String!
+  author: String
+  price: Float!
+  description: String!
+  category: String
+  course: String
+  photo: String
+  ownerid: String
+}
+
+input ReviewInputs {
+  rating: Int!
+  content: String!
+  buyerid: String
+  orderid: Int
+  photo: String
+}
+
+input OrderInputs {
+  status: StatusType = Paid
+  booktitle: String!
+  buyerid: String
+  sellerid: String
+}
+
+input UpdateOrderInputs {
+  id: Int
+  status: StatusType = Delivered
+}
+
+##### Top level declarations
+type Query {
+  about: String!
+  bookList: [Book!]!
+  userList: [User!]!
+  usernum: Int!
+  orderList: [Order!]!
+  
+}
+
+type Mutation {
+  setAboutMessage(message: String!): String
+  userAdd(user: UserInputs!): String
+  userCheck(user: UserCheckInputs!): String
+  bookAdd(book: BookInputs!): Book!
+  orderAdd(order: OrderInputs!):Order!
+  reviewAdd(review: ReviewInputs!): String!
+  orderUpdate(order: UpdateOrderInputs!):Order
+  orderReview(orderid:Int):Order
+}

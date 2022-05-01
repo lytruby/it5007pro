@@ -1,0 +1,250 @@
+/* 声明字体图标 */
+/* @font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?tomleg');
+    src:  url('../fonts/icomoon.eot?tomleg#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?tomleg') format('truetype'),
+      url('../fonts/icomoon.woff?tomleg') format('woff'),
+      url('../fonts/icomoon.svg?tomleg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  } */
+
+/* 版心 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.style_red {
+    color: #7bbe97;
+}
+
+.shortcut {
+    height: 31px;
+    background-color: #f1f1f1;
+    line-height: 31px;
+}
+
+.shortcut ul li {
+    float: left;
+}
+
+.shortcut .fr ul li:nth-child(even) {
+    margin: 9px 15px 0;
+    width: 1px;
+    height: 12px;
+    background-color: #666;
+}
+
+.arrow-icon::after{
+    margin-left: 6px;
+    content: '\e91e';
+    font-family: 'icomoon';
+}
+
+/* header 头部制作 */
+.header {
+    position: relative;
+    height: 105px;
+}
+.logo {
+    position: absolute;
+    top: 25px;
+    width: 171px;
+    height: 61px;
+}
+
+.logo a {
+    display: block;
+    width: 171px;
+    height: 61px;
+    /* background: url(../images/logo.png); */
+    /* 隐藏文字的两种方法 */
+    /* font-size: 0; */
+    text-indent: -9999px;
+    overflow: hidden;
+}
+.search {
+    position: absolute;
+    left: 346px;
+    top: 25px;
+    width: 538px;
+    height: 36px;
+    border: 2px solid #5d9777;
+}
+.search input {
+    float: left;
+    width: 454px;
+    height: 32px;
+    padding-left: 10px;
+}
+.search button {
+    /* 因为行内块元素默认中间有空隙所以会寄去第二行，改成浮动 */
+    float: left;
+    width: 80px;
+    height: 32px;
+    background-color: #5d9777;
+    font-size: 16px;
+    color: #fff;
+}
+.hotwords {
+    position: absolute;
+    top: 66px;
+    left: 346px;
+}
+.hotwords a {
+    margin: 0 10px;
+}
+.shopcar {
+    position: absolute;
+    right: 60px;
+    top: 25px;
+    width: 140px;
+    height: 35px;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+    line-height: 35px;
+    text-align: center;
+}
+
+.shopcar::before {
+    /* content: "\e93a"; */
+    font-family: 'icomoon';
+    color: #5d9777;
+    margin-right: 5px;
+}
+
+.count {
+    position: absolute;
+    top: -5px;
+    left: 20px;
+    height: 14px;
+    color: #fff;
+    background-color: #5d9777;
+    padding: 0 5px;
+    line-height: 14px;
+    border-radius: 7px 7px 7px 0;
+}
+
+.nav {
+    height: 47px;
+    border-bottom: 2px solid #5d9777;
+}
+
+.nav .dropdown{
+    float: left;
+    width: 210px;
+    height: 45px;
+    background-color: #5d9777;
+}
+
+.nav .navitems{
+    float: left;
+}
+
+.dropdown .dt {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    line-height: 45px;
+}
+.dropdown .dd {
+    /* 不然会压住通栏盒子的下边界线 */
+
+    margin-top: 2px;
+    width: 100%;
+    height: 465px;
+    background-color: #5d9777;
+}
+.dropdown .dd ul li {
+    position: relative;
+    margin-left: 2px;
+    padding-left: 10px;
+    height: 31px;
+    line-height: 31px;
+}
+.dropdown .dd ul li:hover{
+    background-color: #fff;
+}
+.dropdown .dd ul li::after{
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    content: "\e920";
+    font-family: 'icomoon';
+    color: #fff;
+    font-size: 14px;
+}
+
+.dropdown .dd ul li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.dropdown .dd ul li:hover a {
+    color:#5d9777;
+}
+
+.navitems ul li {
+    float: left;
+}
+
+.navitems ul li a {
+    display: block;
+    height: 45px;
+    line-height: 45px;
+    font-size: 16px;
+    padding: 0 25px;
+}
+
+/* 底部模块制作 */
+.footer {
+    margin: auto;
+    height: 415px;
+    padding-top: 30px;
+    background-color: #e4ebe3;
+    padding-left: 200px;
+    text-align: center;
+}
+
+.mod_help {
+    padding-top: 20px;
+    padding-left: 150px;
+    height: 185px;
+    border-bottom: 1px solid #ccc;
+    background-color: #e4ebe3;
+}
+
+.mod_help dl {
+    float: left;
+    width: 200px;
+    font-size: 13px;
+}
+
+
+.mod_help dl dt {
+    font-weight: bolder;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.links {
+    margin-bottom: 15px;
+}
+
+
+.links a {
+    margin:0 3px;
+}
